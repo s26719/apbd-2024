@@ -1,11 +1,26 @@
 ﻿// See https://aka.ms/new-console-template for more information
-
-Console.WriteLine("Hello, World!");
-
-int[] tab1 = {1,2,3,4,5};
-int size = tab1.Length;
-
-foreach (int num in tab1)
+class Program
 {
-    Console.WriteLine(num);
+
+    public static void Main(string[] args)
+    {
+        int[] tablica1 = { 4, 3, 5, 5, 2, 1, 6, 2 };
+        Console.WriteLine(AvgOceny(tablica1));
+    }
+
+    static double AvgOceny(int[] ocenyTab)
+    {
+        double srednia;
+        int suma = 0;
+        int licznik = 0;
+        foreach (var n in ocenyTab)
+        {
+            suma += n;
+            licznik++;
+        }
+
+        srednia = suma / licznik;
+        return srednia;
+    }
+
 }
