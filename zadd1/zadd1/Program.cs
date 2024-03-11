@@ -10,7 +10,7 @@ class Program
 
     static double AvgOceny(int[] ocenyTab)
     {
-        double srednia;
+        double sredniaNowa;
         int suma = 0;
         int licznik = 0;
         foreach (var n in ocenyTab)
@@ -19,8 +19,8 @@ class Program
             licznik++;
         }
 
-        srednia = suma / licznik;
-        return srednia;
+        sredniaNowa = suma / licznik;
+        return sredniaNowa;
     }
 
 }
