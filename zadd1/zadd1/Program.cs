@@ -10,6 +10,7 @@ class Program
 
     static double AvgOceny(int[] ocenyTab)
     {
+
         double sredniaNowaAleNaMain;
         int suma = 0;
         int licznik = 0;
